@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration Gallery - Paldima Resources Limited</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Paldima Resources Limited Logo" width="150">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Inspiration Gallery</h1>
+            <p>Discover beautiful tile installations and design ideas</p>
+        </div>
+    </section>
+
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bathroom">Bathroom</button>
+                <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+                <button class="filter-btn" data-filter="living">Living Room</button>
+                <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Bathroom Gallery Items -->
+                <div class="gallery-item" data-category="bathroom">
+                    <div class="gallery-img">
+                        <img src="images/bathroom.png"alt="Modern Bathroom Design">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Modern Bathroom Design</h3>
+                                <p>Porcelain marble-effect tiles with hexagon mosaic accents</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bathroom">
+                    <div class="gallery-img">
+                        <img src="images/luxury.png"alt="Luxury Spa Bathroom">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Luxury Spa Bathroom</h3>
+                                <p>Natural stone tiles with wood-effect porcelain flooring</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bathroom">
+                    <div class="gallery-img">
+                        <img src="images/shower.png" alt="Contemporary Shower Design">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Contemporary Shower Design</h3>
+                                <p>Large format porcelain tiles with glass mosaic feature wall</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bathroom">
+                    <div class="gallery-img">
+                        <img src="images/minimalist.png"alt="Minimalist Bathroom">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Minimalist Bathroom</h3>
+                                <p>Concrete-effect porcelain tiles in a monochromatic scheme</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kitchen Gallery Items -->
+                <div class="gallery-item" data-category="kitchen">
+                    <div class="gallery-img">
+                        <img src="images/backsplash.png"alt="itchen Backsplash">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Modern Kitchen Backsplash</h3>
+                                <p>Geometric pattern ceramic tiles in a contemporary kitchen</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <div class="gallery-img">
+                        <img src="images/rustic.png"alt="Rustic Kitchen Design">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Rustic Kitchen Design</h3>
+                                <p>Terracotta floor tiles with subway tile backsplash</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <div class="gallery-img">
+                        <img src="images/modern.png"alt="Luxury Kitchen">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Luxury Kitchen</h3>
+                                <p>Marble-effect porcelain tiles with herringbone pattern</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <div class="gallery-img">
+                        <img src="images/contemporary.png"alt="Contemporary Kitchen Floor">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Contemporary Kitchen Floor</h3>
+                                <p>Large format porcelain tiles in a modern open-plan kitchen</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Living Room Gallery Items -->
+                <div class="gallery-item" data-category="living">
+                    <div class="gallery-img">
+                        <img src="images/elegant.png"alt="Elegant Living Room">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Elegant Living Room</h3>
+                                <p>Polished marble-effect porcelain tiles in a spacious living area</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="living">
+                    <div class="gallery-img">
+                        <img src="images/space.png"alt="Modern Living Space">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Modern Living Space</h3>
+                                <p>Concrete-effect large format tiles in a minimalist setting</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="living">
+                    <div class="gallery-img">
+                        <img src="images/decor.png" alt="Rustic Living Room">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Rustic Living Room</h3>
+                                <p>Wood-effect porcelain tiles creating a warm, inviting atmosphere</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="living">
+                    <div class="gallery-img">
+                        <img src="images/plan.png" alt="Contemporary Open Plan">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Contemporary Open Plan</h3>
+                                <p>Seamless large format tiles flowing through an open-concept space</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outdoor Gallery Items -->
+                <div class="gallery-item" data-category="outdoor">
+                    <div class="gallery-img">
+                        <img src="images/piato.png" alt="Modern Patio">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Modern Patio</h3>
+                                <p>Porcelain outdoor tiles with a contemporary design</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <div class="gallery-img">
+                        <img src="images/pool.png" alt="Pool Surround">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Pool Surround</h3>
+                                <p>Anti-slip porcelain tiles designed for wet areas</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <div class="gallery-img">
+                        <img src="images/garden.png" alt="Garden Pathway">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Garden Pathway</h3>
+                                <p>Natural stone pavers creating an elegant garden walkway</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <div class="gallery-img">
+                        <img src="images/kitchen.png" alt="Outdoor Kitchen">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Outdoor Kitchen</h3>
+                                <p>Weather-resistant porcelain tiles in an outdoor entertaining area</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commercial Gallery Items -->
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-img">
+                        <img src="images/lobby.png" alt="Hotel Lobby">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Hotel Lobby</h3>
+                                <p>Luxury marble tiles creating an impressive entrance</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-img">
+                        <img src="images/resturant.png" alt="Restaurant Interior">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Restaurant Interior</h3>
+                                <p>Decorative ceramic tiles adding character to a dining space</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-img">
+                        <img src="images/office.png" alt="Office Space">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Office Space</h3>
+                                <p>Durable porcelain tiles in a modern corporate environment</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-img">
+                        <img src="images/retail.png" alt="Retail Store">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Retail Store</h3>
+                                <p>High-traffic porcelain tiles designed for commercial spaces</p>
+                                <a href="#" class="btn-text gallery-zoom"><i class="fas fa-search-plus"></i> View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Our design experts can help you choose the perfect tiles for your space</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="products.html" class="btn btn-secondary">Browse Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>Paldima Resources Limited</h2>
+                    </div>
+                    <p>Your premier destination for high-quality tiles and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/profile.php?id=61575184247760"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/paldi.ma/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/PaldimaResource"><i class="fab fa-x"></i></a>
+                        <a href="https://www.linkedin.com/in/paldima-resources-ltd-b4665a362"><i class="fab fa-linkedin-in"></i></a>
+                         <a href="https://www.tiktok.com/search?q=Paldima%20Resources%20Ltd&t=1745512471476"><i class="fab fa-tik-tok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Collections</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html#ceramic">Ceramic Tiles</a></li>
+                        <li><a href="products.html#porcelain">Porcelain Tiles</a></li>
+                        <li><a href="products.html#stone">Natural Stone</a></li>
+                        <li><a href="products.html#mosaic">Mosaic Tiles</a></li>
+                        <li><a href="products.html#outdoor">Outdoor Tiles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 19 NNPC Complex Road, Ekpan <br> Nigeria</li>
+                        <li><i class="fas fa-phone"></i> (+234)80-649-356-60</li>
+                        <li><i class="fas fa-envelope"></i>paldimaresourcesltd@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Paldima Resources Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox-container">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="" class="lightbox-img">
+            <div class="lightbox-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

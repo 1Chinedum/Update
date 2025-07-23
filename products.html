@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Paldima Resources Limited</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Paldima Resources Limited Logo" width="150">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html" class="active">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Products</h1>
+            <p>Explore our extensive collection of premium tiles</p>
+        </div>
+    </section>
+
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="ceramic">Ceramic</option>
+                        <option value="porcelain">Porcelain</option>
+                        <option value="stone">Natural Stone</option>
+                        <option value="mosaic">Mosaic</option>
+                        <option value="outdoor">Outdoor</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Room:</label>
+                    <select id="room-filter">
+                        <option value="all">All Rooms</option>
+                        <option value="bathroom">Bathroom</option>
+                        <option value="kitchen">Kitchen</option>
+                        <option value="living">Living Room</option>
+                        <option value="outdoor">Outdoor</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Color:</label>
+                    <select id="color-filter">
+                        <option value="all">All Colors</option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="gray">Gray</option>
+                        <option value="beige">Beige</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Size:</label>
+                    <select id="size-filter">
+                        <option value="all">All Sizes</option>
+                        <option value="small">Small (< 30cm)</option>
+                        <option value="medium">Medium (30-60cm)</option>
+                        <option value="large">Large (> 60cm)</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary filter-btn">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="ceramic">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ceramic Tiles</h2>
+                <p>Versatile and durable options for walls and floors</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="ceramic" data-room="bathroom kitchen" data-color="white" data-size="medium">
+                    <div class="product-img">
+                        <img src="images/white ceramic.png" alt="White Ceramic Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic White Ceramic</h3>
+                        <p class="product-desc">Elegant white ceramic tiles with a glossy finish, perfect for bathrooms and kitchens.</p>
+                        <div class="product-meta">
+                            <span class="product-size">30x60cm</span>
+                            <span class="product-price">$24.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="ceramic" data-room="kitchen living" data-color="gray" data-size="large">
+                    <div class="product-img">
+                        <img src="images/gray.png" alt="Gray Ceramic Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern Gray Ceramic</h3>
+                        <p class="product-desc">Contemporary gray ceramic tiles with a matte finish, ideal for modern interiors.</p>
+                        <div class="product-meta">
+                            <span class="product-size">60x60cm</span>
+                            <span class="product-price">$29.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="ceramic" data-room="bathroom kitchen" data-color="beige" data-size="medium">
+                    <div class="product-img">
+                        <img src="images/brown.png" alt="Beige Ceramic Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Natural Beige Ceramic</h3>
+                        <p class="product-desc">Warm beige ceramic tiles with a textured surface for added grip and style.</p>
+                        <div class="product-meta">
+                            <span class="product-size">45x45cm</span>
+                            <span class="product-price">$26.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="ceramic" data-room="bathroom" data-color="blue" data-size="small">
+                    <div class="product-img">
+                        <img src="images/ocean.png" alt="Blue Ceramic Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ocean Blue Ceramic</h3>
+                        <p class="product-desc">Vibrant blue ceramic tiles perfect for creating a refreshing bathroom atmosphere.</p>
+                        <div class="product-meta">
+                            <span class="product-size">20x20cm</span>
+                            <span class="product-price">$22.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="ceramic" data-room="living kitchen bathroom" data-color="gray" data-size="large">
+                    <div class="product-img">
+                        <img src="images/grigotile.png" alt="Grigio Ceramic Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>GRIGIO Ceramic Tile</h3>
+                        <p class="product-desc">Elegant gray ceramic tile with a smooth finish, versatile for both floor and wall applications.</p>
+                        <div class="product-meta">
+                            <span class="product-size">60x60cm</span>
+                            <span class="product-price">$32.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="porcelain">
+        <div class="container">
+            <div class="section-header">
+                <h2>Porcelain Tiles</h2>
+                <p>Elegant and durable options for high-traffic areas</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="porcelain" data-room="living kitchen" data-color="gray" data-size="large">
+                    <div class="product-img">
+                        <img src="images/grayporcelain.png" alt="Gray Porcelain Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Marble Effect Porcelain</h3>
+                        <p class="product-desc">Luxurious marble-effect porcelain tiles that bring elegance to any space.</p>
+                        <div class="product-meta">
+                            <span class="product-size">80x80cm</span>
+                            <span class="product-price">$39.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="porcelain" data-room="living outdoor" data-color="beige" data-size="large">
+                    <div class="product-img">
+                        <img src="images/beige.png" alt="Beige Porcelain Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Travertine Look Porcelain</h3>
+                        <p class="product-desc">Beautiful travertine-effect porcelain tiles suitable for indoor and outdoor use.</p>
+                        <div class="product-meta">
+                            <span class="product-size">60x90cm</span>
+                            <span class="product-price">$42.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="porcelain" data-room="living kitchen" data-color="black" data-size="large">
+                    <div class="product-img">
+                        <img src="images/black.png" alt="Black Porcelain Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Black Porcelain</h3>
+                        <p class="product-desc">Sophisticated black porcelain tiles with a polished finish for a dramatic effect.</p>
+                        <div class="product-meta">
+                            <span class="product-size">60x60cm</span>
+                            <span class="product-price">$44.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="porcelain" data-room="living kitchen bathroom" data-color="white" data-size="medium">
+                    <div class="product-img">
+                        <img src="images/purewhite.png" alt="White Porcelain Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pure White Porcelain</h3>
+                        <p class="product-desc">Clean and bright white porcelain tiles that brighten any space with a timeless look.</p>
+                        <div class="product-meta">
+                            <span class="product-size">45x90cm</span>
+                            <span class="product-price">$36.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="porcelain" data-room="living kitchen bathroom" data-color="gray" data-size="large">
+                    <div class="product-img">
+                        <img src="images/grigotile.png" alt="Grigio Floor & Wall Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>GRIGIO Floor & Wall Tile</h3>
+                        <p class="product-desc">Elegant gray porcelain tile with a modern matte finish, perfect for both floors and walls in any room.</p>
+                        <div class="product-meta">
+                            <span class="product-size">60x60cm</span>
+                            <span class="product-price">$45.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="stone">
+        <div class="container">
+            <div class="section-header">
+                <h2>Natural Stone</h2>
+                <p>Timeless beauty with unique natural patterns</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="stone" data-room="living outdoor" data-color="beige" data-size="medium">
+                    <div class="product-img">
+                        <img src="images/traventine.png" alt="Travertine Stone">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Travertine</h3>
+                        <p class="product-desc">Natural travertine stone with unique patterns and textures for a timeless look.</p>
+                        <div class="product-meta">
+                            <span class="product-size">40x60cm</span>
+                            <span class="product-price">$54.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="stone" data-room="living kitchen" data-color="gray" data-size="medium">
+                    <div class="product-img">
+                        <img src="images/slate.png" alt="Slate Stone">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Natural Slate</h3>
+                        <p class="product-desc">Rustic slate stone tiles with natural variations in color and texture.</p>
+                        <div class="product-meta">
+                            <span class="product-size">30x60cm</span>
+                            <span class="product-price">$49.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="stone" data-room="living bathroom" data-color="white" data-size="medium">
+                    <div class="product-img">
+                        <img src="images/carara.png" alt="Marble Stone">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Carrara Marble</h3>
+                        <p class="product-desc">Luxurious Carrara marble with its distinctive gray veining on a white background.</p>
+                        <div class="product-meta">
+                            <span class="product-size">30x60cm</span>
+                            <span class="product-price">$69.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="stone" data-room="outdoor" data-color="beige" data-size="small">
+                    <div class="product-img">
+                        <img src="images/sandstone.png" alt="Sandstone">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Natural Sandstone</h3>
+                        <p class="product-desc">Durable sandstone tiles perfect for outdoor patios and garden pathways.</p>
+                        <div class="product-meta">
+                            <span class="product-size">20x20cm</span>
+                            <span class="product-price">$46.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="stone" data-room="living kitchen bathroom" data-color="gray" data-size="large">
+                    <div class="product-img">
+                        <img src="images/grigotile.png" alt="Grigio Floor & Wall Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>GRIGIO Floor & Wall Tile</h3>
+                        <p class="product-desc">Elegant gray stone-look tile with a modern matte finish, perfect for both floors and walls in any room.</p>
+                        <div class="product-meta">
+                            <span class="product-size">60x60cm</span>
+                            <span class="product-price">$52.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="mosaic">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mosaic Tiles</h2>
+                <p>Artistic designs for statement walls and features</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="mosaic" data-room="bathroom kitchen" data-color="blue" data-size="small">
+                    <div class="product-img">
+                        <img src="images/ocean mosaic.png" alt="Blue Mosaic">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ocean Blue Mosaic</h3>
+                        <p class="product-desc">Stunning blue glass mosaic tiles perfect for bathroom feature walls and backsplashes.</p>
+                        <div class="product-meta">
+                            <span class="product-size">30x30cm sheet</span>
+                            <span class="product-price">$34.99/sheet</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="mosaic" data-room="bathroom kitchen" data-color="white black" data-size="small">
+                    <div class="product-img">
+                        <img src="images/hexagon.png" alt="Black and White Mosaic">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Hexagon Mosaic</h3>
+                        <p class="product-desc">Timeless black and white hexagon mosaic tiles for a vintage-inspired look.</p>
+                        <div class="product-meta">
+                            <span class="product-size">30x30cm sheet</span>
+                            <span class="product-price">$32.99/sheet</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="mosaic" data-room="bathroom kitchen" data-color="green" data-size="small">
+                    <div class="product-img">
+                        <img src="images/emerald.png" alt="Green Mosaic">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Emerald Glass Mosaic</h3>
+                        <p class="product-desc">Rich emerald green glass mosaic tiles that add a touch of luxury to any space.</p>
+                        <div class="product-meta">
+                            <span class="product-size">30x30cm sheet</span>
+                            <span class="product-price">$36.99/sheet</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="mosaic" data-room="bathroom kitchen living" data-color="beige" data-size="small">
+                    <div class="product-img">
+                        <img src="images/white.png" alt="Marble Mosaic">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Marble Herringbone Mosaic</h3>
+                        <p class="product-desc">Elegant marble herringbone mosaic tiles for a sophisticated design statement.</p>
+                        <div class="product-meta">
+                            <span class="product-size">30x30cm sheet</span>
+                            <span class="product-price">$42.99/sheet</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="mosaic" data-room="bathroom kitchen" data-color="gray" data-size="small">
+                    <div class="product-img">
+                        <img src="images/grigo.png" alt="Grigio Mosaic Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>GRIGIO Mosaic</h3>
+                        <p class="product-desc">Elegant gray mosaic tiles perfect for creating stunning feature walls and backsplashes.</p>
+                        <div class="product-meta">
+                            <span class="product-size">30x30cm sheet</span>
+                            <span class="product-price">$38.99/sheet</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="outdoor">
+        <div class="container">
+            <div class="section-header">
+                <h2>Outdoor Tiles</h2>
+                <p>Weather-resistant options for patios and garden paths</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="outdoor" data-room="outdoor" data-color="gray" data-size="medium">
+                    <div class="product-img">
+                        <img src="images/antislip.png" alt="Outdoor Porcelain">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anti-Slip Porcelain Outdoor</h3>
+                        <p class="product-desc">Durable porcelain outdoor tiles with anti-slip surface, perfect for patios.</p>
+                        <div class="product-meta">
+                            <span class="product-size">60x60cm</span>
+                            <span class="product-price">$38.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="outdoor" data-room="outdoor" data-color="beige" data-size="medium">
+                    <div class="product-img">
+                        <img src="images/pavers.png" alt="Outdoor Stone">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Natural Stone Pavers</h3>
+                        <p class="product-desc">Natural stone pavers with a textured finish for garden paths and patios.</p>
+                        <div class="product-meta">
+                            <span class="product-size">40x40cm</span>
+                            <span class="product-price">$44.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="outdoor" data-room="outdoor" data-color="gray" data-size="large">
+                    <div class="product-img">
+                        <img src="images/concrete.png" alt="Outdoor Concrete">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Concrete-Look Outdoor Tiles</h3>
+                        <p class="product-desc">Modern concrete-effect porcelain tiles designed for outdoor durability.</p>
+                        <div class="product-meta">
+                            <span class="product-size">80x80cm</span>
+                            <span class="product-price">$46.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="outdoor" data-room="outdoor" data-color="brown" data-size="medium">
+                    <div class="product-img">
+                        <img src="images/wood.png" alt="Outdoor Wood Effect">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wood-Effect Outdoor Tiles</h3>
+                        <p class="product-desc">Porcelain tiles with realistic wood effect, designed for outdoor use.</p>
+                        <div class="product-meta">
+                            <span class="product-size">30x120cm</span>
+                            <span class="product-price">$48.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="outdoor" data-room="outdoor" data-color="gray" data-size="large">
+                    <div class="product-img">
+                        <img src="images/gwood.png" alt="Grigio Floor & Wall Tile">
+                        <div class="product-overlay">
+                            <a href="#" class="btn-text">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>GRIGIO Outdoor Tile</h3>
+                        <p class="product-desc">Weather-resistant gray tile with anti-slip surface, ideal for patios, walkways, and outdoor spaces.</p>
+                        <div class="product-meta">
+                            <span class="product-size">60x60cm</span>
+                            <span class="product-price">$48.99/m²</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pagination-section">
+        <div class="container">
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Help Choosing the Right Tiles?</h2>
+                <p>Our experts are ready to assist you with your project</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="about.html" class="btn btn-secondary">Learn About Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>Paldima Resources Limited</h2>
+                    </div>
+                    <p>Your premier destination for high-quality tiles and exceptional service.</p>
+                    <div class="social-links">
+                       <a href="https://web.facebook.com/profile.php?id=61575184247760"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/paldi.ma/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/PaldimaResource"><i class="fab fa-x"></i></a>
+                        <a href="https://www.linkedin.com/in/paldima-resources-ltd-b4665a362"><i class="fab fa-linkedin-in"></i></a>
+                         <a href="https://www.tiktok.com/search?q=Paldima%20Resources%20Ltd&t=1745512471476"><i class="fab fa-tik-tok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Collections</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html#ceramic">Ceramic Tiles</a></li>
+                        <li><a href="products.html#porcelain">Porcelain Tiles</a></li>
+                        <li><a href="products.html#stone">Natural Stone</a></li>
+                        <li><a href="products.html#mosaic">Mosaic Tiles</a></li>
+                        <li><a href="products.html#outdoor">Outdoor Tiles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 19 NNPC Complex Road Ekpan <br> Nigeria.</li>
+                        <li><i class="fas fa-phone"></i> (+234)80-649-356-60 </li>
+                        <li><i class="fas fa-envelope"></i> paldimaresourcesltd@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Paldima Resources Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
