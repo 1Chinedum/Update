@@ -1,0 +1,370 @@
+/* About Page Styles for Paldima Resources Limited Website */
+
+/* Page Banner */
+.page-banner {
+    height: 40vh;
+    min-height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0;
+}
+
+.banner-content {
+    max-width: 800px;
+    padding: 0 var(--spacing-md);
+}
+
+.page-banner h1 {
+    font-size: 4.8rem;
+    color: white;
+    margin-bottom: var(--spacing-xs);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-banner p {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Our Story Section */
+.story-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.story-image {
+    position: relative;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.story-image::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    border-top: 5px solid var(--primary-color);
+    border-left: 5px solid var(--primary-color);
+    z-index: -1;
+}
+
+.story-image::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    border-bottom: 5px solid var(--primary-color);
+    border-right: 5px solid var(--primary-color);
+    z-index: -1;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.story-text h3 {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.story-text p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+/* Our Values Section */
+.values-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--light-bg-color);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.value-card {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    color: var(--primary-color);
+    font-size: 3rem;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.value-card:hover .value-icon {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.value-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--heading-color);
+}
+
+.value-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Our Team Section */
+.team-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.team-member {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-medium);
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.member-info {
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.member-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--heading-color);
+}
+
+.member-role {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.6rem;
+}
+
+.member-bio {
+    color: var(--text-color);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+.member-social {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xs);
+}
+
+.member-social a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--light-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.member-social a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--light-bg-color);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: var(--spacing-xl) 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 3.6rem;
+    margin-bottom: var(--spacing-sm);
+    color: white;
+}
+
+.cta-content p {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-md);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .story-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .values-grid,
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .page-banner {
+        height: 30vh;
+        min-height: 250px;
+        margin-top: 70px;
+    }
+    
+    .page-banner h1 {
+        font-size: 3.6rem;
+    }
+    
+    .page-banner p {
+        font-size: 1.8rem;
+    }
+    
+    .story-text h3 {
+        font-size: 2.2rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    
+    .value-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2.5rem;
+    }
+    
+    .value-card h3 {
+        font-size: 2rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    
+    .member-image {
+        height: 250px;
+    }
+    
+    .member-info h3 {
+        font-size: 2rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 3rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.6rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 576px) {
+    .page-banner h1 {
+        font-size: 3rem;
+    }
+    
+    .values-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-card,
+    .team-member {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}

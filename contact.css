@@ -1,0 +1,395 @@
+/* Contact Page Styles for Paldima Resources Limited Website */
+
+/* Page Banner */
+.page-banner {
+    height: 40vh;
+    min-height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/contact-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0;
+}
+
+.banner-content {
+    max-width: 800px;
+    padding: 0 var(--spacing-md);
+}
+
+.page-banner h1 {
+    font-size: 4.8rem;
+    color: white;
+    margin-bottom: var(--spacing-xs);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-banner p {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Information Section */
+.contact-info-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--light-bg-color);
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.contact-info-card {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    color: white;
+    font-size: 2.5rem;
+}
+
+.contact-info-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--heading-color);
+}
+
+.contact-info-card p {
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    color: var(--heading-color);
+    font-size: 1.6rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    font-family: var(--body-font);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-top: 0.3rem;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.form-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+/* Form Success Message */
+.form-success-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-medium), visibility var(--transition-medium);
+}
+
+.form-success-message.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.success-icon {
+    font-size: 5rem;
+    color: var(--success-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.form-success-message h3 {
+    font-size: 2.8rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--heading-color);
+}
+
+.form-success-message p {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-color);
+}
+
+/* Map Section */
+.map-section {
+    height: 450px;
+}
+
+.map-container {
+    height: 100%;
+    width: 100%;
+}
+
+.map-container iframe {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--light-bg-color);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-md);
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    padding: var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.faq-question:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.05);
+}
+
+.faq-question h3 {
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.faq-toggle {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    transition: transform var(--transition-fast);
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 var(--spacing-md);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-medium), padding var(--transition-medium);
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    max-height: 500px; /* Adjust based on content */
+}
+
+.faq-answer p {
+    margin: 0;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: var(--spacing-xl) 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 3.6rem;
+    margin-bottom: var(--spacing-sm);
+    color: white;
+}
+
+.cta-content p {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-md);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contact-info-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .page-banner {
+        height: 30vh;
+        min-height: 250px;
+        margin-top: 70px;
+    }
+    
+    .page-banner h1 {
+        font-size: 3.6rem;
+    }
+    
+    .page-banner p {
+        font-size: 1.8rem;
+    }
+    
+    .contact-info-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .cta-content h2 {
+        font-size: 3rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.6rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 576px) {
+    .page-banner h1 {
+        font-size: 3rem;
+    }
+    
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .contact-form {
+        padding: var(--spacing-md);
+    }
+    
+    .faq-question h3 {
+        font-size: 1.6rem;
+    }
+}
